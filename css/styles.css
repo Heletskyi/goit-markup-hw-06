@@ -34,7 +34,6 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  width: 320px;
 }
 
 @media screen and (min-width: 768px) {
@@ -188,23 +187,16 @@ header .container {
   top: 0;
   left: 0;
   background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
 }
 .mob-menu-close-button {
   position: absolute;
-  border: 2px;
   background-color: #fff;
   top: 24px;
   right: 24px;
-  border-color: #dddee0;
-}
-.mob-close-btn-border {
-  border: 2px #e7e9fc;
-  width: 24px;
-  height: 24px;
+  border-color: #ecedf0;
   border-radius: 50%;
-  position: absolute;
-  top: 24px;
-  right: 24px;
 }
 .mob-nav-list {
   display: flex;
@@ -223,6 +215,9 @@ header .container {
   line-height: 11.1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.mob-current {
+  color: #404bbf;
 }
 .mob-contact-menu {
   display: flex;
