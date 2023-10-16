@@ -172,7 +172,6 @@ header .container {
   display: flex;
   flex-direction: column-reverse;
   gap: 24px;
-  padding-left: 16px;
   margin-bottom: 48px;
 }
 
@@ -180,6 +179,7 @@ header .container {
   .contact-menu {
     display: flex;
     flex-direction: column;
+    gap: 12px;
   }
 }
 
@@ -223,7 +223,7 @@ header .container {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 40px 24px 16px;
+  padding: 72px 16px 40px 16px;
 }
 .mob-menu-close-button {
   position: absolute;
@@ -251,6 +251,14 @@ header .container {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.mob-contact-information {
+  color: var(--SLATE, #434455);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
 .mob-current {
   color: #404bbf;
 }
@@ -303,7 +311,7 @@ header .container {
 
 @media screen and (min-width: 768px) {
   .first-section {
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -371,10 +379,7 @@ header .container {
 
 @media screen and (min-width: 768px) {
   .service {
-    margin-top: 36px;
-    margin-bottom: 112px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 36px auto 0;
   }
 }
 
@@ -514,6 +519,11 @@ header .container {
   padding: 120px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .third-section {
+    padding: 96px 0;
+  }
+}
 .title-team {
   color: #2e2f42;
   font-weight: 700;
@@ -563,7 +573,7 @@ header .container {
 
 @media screen and (min-width: 768px) {
   .item-team {
-    width: calc((100% - 24px) / 2);
+    width: 264px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -768,7 +778,6 @@ header .container {
 .tagline-container {
   display: flex;
   flex-direction: column;
-  gap: 72px;
   text-align: center;
 }
 
@@ -797,7 +806,6 @@ header .container {
 }
 @media screen and (min-width: 1158px) {
   .tagline-logotype {
-    width: 100%;
     text-align: left;
     margin-right: 120px;
   }
@@ -832,7 +840,6 @@ header .container {
 }
 
 .tagline-social-media {
-  margin-right: auto;
 }
 
 .tagline-title {
@@ -847,6 +854,7 @@ header .container {
 .tagline-socials-list {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 
 .tagline-socials-item {
